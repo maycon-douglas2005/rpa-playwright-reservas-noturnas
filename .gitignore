@@ -1,5 +1,5 @@
 .env
-RESERVAS NOITE 2026 S2.xlsx
+RESERVAS.xlsx
 __pycache__/
 .vscode/
 auth.json

@@ -1,6 +1,6 @@
 from openpyxl import load_workbook
 
-def retorna_reservas(caminho_arquivo="RESERVAS.xlsx"):
+def  retorna_reservas(caminho_arquivo="RESERVAS.xlsx"):
     try:
         arquivo = load_workbook(caminho_arquivo, data_only=True)
         aba = arquivo['PLANILHA TRATADA']
@@ -16,3 +16,6 @@ def retorna_reservas(caminho_arquivo="RESERVAS.xlsx"):
         return lista_reservas
     finally:
         arquivo.close()
+
+
+print(retorna_reservas())
